@@ -1,0 +1,23 @@
+{
+  "name": "at2016node",
+  "version": "1.0.0",
+  "description": "Projeto para importar dados das fichas cadastrais do amigo trabalhador",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danizavtz/at2016node.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Danizavtz",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/danizavtz/at2016node/issues"
+  },
+  "homepage": "https://github.com/danizavtz/at2016node#readme"
+}
