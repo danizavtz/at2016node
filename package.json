@@ -4,6 +4,7 @@
   "description": "Projeto para importar dados das fichas cadastrais do amigo trabalhador",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "test"
   },
   "repository": {
@@ -19,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/danizavtz/at2016node/issues"
   },
-  "homepage": "https://github.com/danizavtz/at2016node#readme"
+  "homepage": "https://github.com/danizavtz/at2016node#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0"
+  }
 }
