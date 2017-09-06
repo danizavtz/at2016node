@@ -5,11 +5,11 @@
     var trabalhadorService = require('../services/trabalhador.service.js');
 
 
+    router.post('/trabalhadores');
     router.get('/trabalhadores', trabalhadorService.getTrabalhadores);
     router.get('/trabalhadores/:id([0-9]+)');
-    router.post('/trabalhadores');
-    router.put('/trabalhadores');
-    router.delete('/trabalhadores');
+    router.put('/trabalhadores/:id([0-9]+)');
+    router.delete('/trabalhadores/:id([0-9]+)');
 
     module.exports = router;
 }());

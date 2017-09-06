@@ -7,9 +7,9 @@
     postgres.client.query(sql, function(err, results) {
     	if(err){
     		console.log(err);
-    		return res.json(err.detail);
+    		return res.status(500).json(err.detail);
     	}
-      res.json(results.rows);
+      res.status(200).json(results.rows);
       res.end();
     });
   }
