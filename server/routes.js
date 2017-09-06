@@ -4,7 +4,7 @@
         var express = require('express');
         var router = express.Router();
 
-        router.use(require('./controllers/trabalhador.controller'));
+        router.use(require('./routes/trabalhador.route'));
         
         router.get('/', function(req, res) {
             res.json('Hello World!')

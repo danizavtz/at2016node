@@ -5,6 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
+    "create": "psql -U postgres -d trabalhador -a -f sql/create.sql",
+    "drop": "psql -U postgres -d trabalhador -a -f sql/drop.sql",
     "test": "test"
   },
   "repository": {
@@ -25,6 +27,7 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "pg": "^7.3.0"
   }
 }

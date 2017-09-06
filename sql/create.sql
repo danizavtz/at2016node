@@ -12,10 +12,10 @@ CREATE TABLE cadastrador (
 );
 
 
-CREATE TABLE cadastro_trabalhador (
+CREATE TABLE trabalhador (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(50) ,
-    sexo VARCHAR(9) ,
+    sexo genero,
     cpf VARCHAR(11) ,
     rg VARCHAR(15) ,
     expeditor VARCHAR(10) ,
@@ -26,7 +26,7 @@ CREATE TABLE cadastro_trabalhador (
     pai VARCHAR(50) ,
     pis VARCHAR(11) ,
     tituloe VARCHAR(12) ,
-    estadoc VARCHAR(12) ,
+    estadoc estadocivil,
     nit VARCHAR(11) ,
     agencia VARCHAR(12) ,
     conta VARCHAR(15) ,
@@ -57,10 +57,10 @@ CREATE TABLE cadastro_trabalhador (
     derg boolean ,
     decomprovanteendereco boolean ,
     nomedeclaracao VARCHAR(100) ,
-    datacadastramento timestamp with time zone default now(),
+    datacadastramento DATE default now(),
     cadastrador_id REFERENCES cadastrador(id) on delete set null,
     revisado_id REFERENCES cadastrador(id) on delete set null,
-    data_revisado timestamp with time zone,
+    data_revisado DATE,
     desautorizado boolean ,
     exportado boolean ,
     habilitado boolean ,
