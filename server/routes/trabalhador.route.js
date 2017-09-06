@@ -3,6 +3,7 @@
     var express = require('express');
     var router = express.Router();
     var trabalhadorService = require('../services/trabalhador.service.js');
+    var trabalhadorValidator = require('../validators/trabalhador.validator.js');
 
 
     router.post('/trabalhadores');

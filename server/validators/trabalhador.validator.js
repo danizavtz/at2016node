@@ -1,6 +1,6 @@
 (function() {
     'use strict';
     exports.trabalhadorValidation = function(req, res, next){
-		req.check    	
+	
     }
 })();
